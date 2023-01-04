@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Zoom Here Image On Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        $(".zoom").css({
+          width: (100 + scroll / 5) + "%"
+        })
+        $(".zoom img").css({
+          left: 50 - (scroll / 5) / 5 + "%"
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <section class="zoom">
+      <img src="image.jpg" alt="">
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aut
+        veritatis eveniet rerum dolore temporibus accusantium earum. Harum
+        dolore nulla praesentium? Quia laboriosam asperiores perspiciatis facere
+        eos error illum dicta!
+      </p>
+    </section>
+  </body>
+</html>
