@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background: #262626;
+}
+
+ul {
+  margin: 300px auto;
+  width: 50%;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+
+ul li a .icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a .icon .fa-solid {
+  font-size: 4em;
+  transition: .5s;
+}
+
+ul li a .icon .text {
+  opacity: 0;
+  transition: .5s;
+  text-align: center;
+  transform: translateY(20px) scale(1);
+}
+
+
+ul li:hover a .icon .fa-solid {
+  transform: translateY(-20px) scale(.5);
+}
+
+ul li:hover a .icon .text {
+  opacity: 1;
+  transform: translateY(-20px);
+}
