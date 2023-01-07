@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Circular Rotate Text Effect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script src="./jquery.lettering.js"></script>
+    <script src="./circletype.min.js"></script>
+  </head>
+  <body>
+    <div class="layer"></div>
+    <div id="text">
+      ONLINE TUTORIAL - MUHAMMAD IRSHAD -&nbsp;
+    </div>
+    <script>
+      const circleType = new CircleType(document.getElementById('text'))
+    </script>
+  </body>
+</html>

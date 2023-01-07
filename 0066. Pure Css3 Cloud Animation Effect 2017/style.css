@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: url(./image.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container .cloud1 {
+  position: absolute;
+  top: 60px;
+  animation: cloudOne infinite 30s alternate;
+}
+
+@keyframes cloudOne {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.container .cloud2 {
+  position: absolute;
+  top: 60px;
+  animation: cloudTwo infinite 20s alternate;
+}
+
+@keyframes cloudTwo {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
