@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $(".cardNavbar ul li:nth-child(1)").on('mouseover', function(){
+          $(".cardContainer .cardSingle").removeClass('active')
+          $(".cardContainer .cardSingle:nth-child(1)").addClass('active')
+        })
+        $(".cardNavbar ul li:nth-child(2)").on('mouseover', function(){
+          $(".cardContainer .cardSingle").removeClass('active')
+          $(".cardContainer .cardSingle:nth-child(2)").addClass('active')
+        })
+        $(".cardNavbar ul li:nth-child(3)").on('mouseover', function(){
+          $(".cardContainer .cardSingle").removeClass('active')
+          $(".cardContainer .cardSingle:nth-child(3)").addClass('active')
+        })
+        $(".cardNavbar ul li:nth-child(4)").on('mouseover', function(){
+          $(".cardContainer .cardSingle").removeClass('active')
+          $(".cardContainer .cardSingle:nth-child(4)").addClass('active')
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="cardSlider">
+      <div class="cardContainer">
+        <div class="cardSingle">
+          <article>
+            <h1>Card 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              beatae facere, quaerat quos explicabo amet corrupti mollitia cum
+              maxime harum tempora dicta modi nam! Expedita nesciunt quibusdam
+              impedit recusandae explicabo!
+            </p>
+          </article>
+        </div>
+        <div class="cardSingle">
+          <article>
+            <h1>Card 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              beatae facere, quaerat quos explicabo amet corrupti mollitia cum
+              maxime harum tempora dicta modi nam! Expedita nesciunt quibusdam
+              impedit recusandae explicabo!
+            </p>
+          </article>
+        </div>
+        <div class="cardSingle">
+          <article>
+            <h1>Card 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              beatae facere, quaerat quos explicabo amet corrupti mollitia cum
+              maxime harum tempora dicta modi nam! Expedita nesciunt quibusdam
+              impedit recusandae explicabo!
+            </p>
+          </article>
+        </div>
+        <div class="cardSingle">
+          <article>
+            <h1>Card 4</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              beatae facere, quaerat quos explicabo amet corrupti mollitia cum
+              maxime harum tempora dicta modi nam! Expedita nesciunt quibusdam
+              impedit recusandae explicabo!
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="cardNavbar">
+        <ul>
+          <li>Card One</li>
+          <li>Card Two</li>
+          <li>Card Three</li>
+          <li>Card Four</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
