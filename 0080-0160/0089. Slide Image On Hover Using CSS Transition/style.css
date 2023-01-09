@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.slide {
+  width: 278px;
+  height: 200px;
+  background: url(slide.png);
+  transition: .5s;
+}
+
+.center:hover .slide {
+  transform: translateY(-101px);
+}
