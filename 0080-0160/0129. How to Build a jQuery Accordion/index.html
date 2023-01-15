@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accorddion</title>
+    <script src="https://kit.fontawesome.com/bfafa52380.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <ul id="accordion">
+        <li>
+          <a href="#" class="active"><i class="fa-solid fa-gift"></i></a>
+          <div class="box active">
+            <h1>Gift</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quibusdam, nostrum modi voluptas est reiciendis eum et! Esse eum
+              deleniti nobis unde earum quia! Et nihil aspernatur possimus sunt
+              quod!
+            </p>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-martini-glass"></i></a>
+          <div class="box">
+            <h1>Glass</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quibusdam, nostrum modi voluptas est reiciendis eum et! Esse eum
+              deleniti nobis unde earum quia! Et nihil aspernatur possimus sunt
+              quod!
+            </p>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <div class="box">
+            <h1>Globe</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quibusdam, nostrum modi voluptas est reiciendis eum et! Esse eum
+              deleniti nobis unde earum quia! Et nihil aspernatur possimus sunt
+              quod!
+            </p>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+          <div class="box">
+            <h1>Graduate</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quibusdam, nostrum modi voluptas est reiciendis eum et! Esse eum
+              deleniti nobis unde earum quia! Et nihil aspernatur possimus
+              sunt
+              quod!
+            </p>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-users"></i></a>
+          <div class="box">
+            <h1>Groups</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quibusdam, nostrum modi voluptas est reiciendis eum et! Esse
+              eum
+              deleniti nobis unde earum quia! Et nihil aspernatur possimus
+              sunt
+              quod!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script>
+      
+      $(document).on("click", "#accordion>li>a", function() {
+        $(this).siblings(".box").addClass("active");
+        $(this).closest("li").siblings('li').find('.box').removeClass("active")
+      })
+
+      $('#accordion').on("click", "li>a", function() {
+        $('#accordion li a.active').removeClass('active');
+        $(this).addClass("active")
+      })
+    </script>
+  </body>
+</html>

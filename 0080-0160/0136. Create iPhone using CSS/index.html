@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="center">
+      <div class="mobile">
+        <div class="screen active"></div>
+        <div class="home"></div>
+        <div class="inner"></div>
+        <ul class="volumn">
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="silent">
+          <li></li>
+        </ul>
+        <ul class="sleep">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $(".home").click(function() {
+          $(".screen").toggleClass("active")
+        })
+      })
+    </script>
+  </body>
+</html>
