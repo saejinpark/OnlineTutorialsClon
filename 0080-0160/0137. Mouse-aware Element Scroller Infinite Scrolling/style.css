@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+}
+
+#scroll .slide-pane, .infinite-scroller {
+  visibility: hidden;
+}
+
+#scroll .slide-wrap {
+  width: 100%;
+  position: relative;
+}
+
+#scroll .slide-wrap .slide-data {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+#scroll .slide-wrap .slide-data ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#scroll .slide-wrap .slide-data ul li {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  list-style-type: none;
+}

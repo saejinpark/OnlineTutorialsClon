@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  position: absolute;
+  border: 4px solid #262626;
+  background: #262626;
+  border-radius: 50%;
+  transition: 0.5s;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  transform: scale(0.15);
+}
+
+ul li:nth-child(1) {
+  left: -15px;
+}
+ul li:nth-child(3) {
+  left: 15px;
+}
+
+ul.active li:nth-child(1) {
+  transform-origin: left;
+  transform: translate(30px, 10px) rotate(45deg) scale(1);
+  height: 6px;
+  width: 45px;
+  border-radius: 0;
+}
+
+ul.active li:nth-child(2) {
+  transform: scale(1);
+  background: transparent;
+}
+
+ul.active li:nth-child(3) {
+  transform-origin: right;
+  transform: translate(-15px, 10px) rotate(-45deg) scale(1);
+  height: 6px;
+  width: 45px;
+  border-radius: 0;
+}

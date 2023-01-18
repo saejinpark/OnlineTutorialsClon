@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  font-family: verdana;
+}
+
+.box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 120px);
+  padding: 20px;
+  transition: 1s;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box p {
+  font-size: 12px;
+  transition: .5s ease;
+  text-align: justify;
+  margin-top: 25px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #2e80ff;
+  transition: 1s;
+}
+
+.toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 19px;
+  left: 10px;
+  transition: 1s;
+}
+
+.toggle span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+  background: #fff;
+  transition: 1s;
+}
+
+.box.active {
+  width: 240px;
+  height: 320px;
+}
+
+.box.active p {
+  transition-delay: 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.toggle.active {
+  background: #ff3131;
+  top: 0;
+  left: calc(100% - 40px);
+  border-radius: 50%;
+  transform: rotate(45deg) scale(.5);
+}
+
+.toggle.active span {
+  transform: rotate(225deg);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Aware Scrolling</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script src="./infinite-scroller.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="scroll">
+      <ul>
+        <li><img src="https://placeimg.com/500/350/animals"></li>
+        <li><img src="https://placeimg.com/500/350/arch"></li>
+        <li><img src="https://placeimg.com/500/350/nature"></li>
+        <li><img src="https://placeimg.com/500/350/people"></li>
+        <li><img src="https://placeimg.com/500/350/tech"></li>
+        <li><img src="https://placeimg.com/500/350/tech/grayscale"></li>
+      </ul>
+    </section>
+    <script>
+      $(window).on("load", function() {
+        $("#scroll").infiniteScroller({
+          speed: 0,
+          maxSpeed: 100
+        })
+      })
+    </script>
+  </body>
+</html>
