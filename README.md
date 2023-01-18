@@ -1,6 +1,5 @@
-# Online Tutorials 하나씩 따라치기
+# Online Tutorials 영상보면서 하루에 8개씩 따라치기
 
 https://www.youtube.com/@OnlineTutorialsYT
 
-> 목표 코드스쿼드 완주까지 한번 정주행하기
-> 매일 기록하기
+다 한번씩 따라쳐 볼 때 쯤엔 취업이 되어있었으면 좋겠다 
